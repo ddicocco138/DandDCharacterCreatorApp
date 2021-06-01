@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dicoccoandroidfinaldnd">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".NewLog"></activity>
+        <activity android:name=".LogActivity" />
+        <activity android:name=".SearchCharacterActivity" />
+        <activity android:name=".ViewCharacterPdf" />
+        <activity android:name=".CharacterReview" />
+        <activity android:name=".StatCharCreationActivity" />
+        <activity android:name=".WeaponCharCreation" />
+        <activity android:name=".BackgroundCharCreation" />
+        <activity android:name=".ClassPageCharCreation" />
+        <activity android:name=".ViewCharacterActivity" />
+        <activity android:name=".RulesActivity" />
+        <activity android:name=".NewCharacterActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainMenu" />
+        <activity android:name=".UserLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

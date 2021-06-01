@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".NewCharacterActivity">
+
+    <RadioGroup
+        android:id="@+id/raceRadioGroup2"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitles"
+        app:layout_constraintVertical_bias="0.045">
+
+        <RadioButton
+            android:id="@+id/tieflingRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/tieflingfemaletoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Tiefling"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/gnomeRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/gnomemaletoken"
+            android:text="\n\n\n\n\n    Gnome"
+            android:buttonTint="@color/black"
+
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/greatclubRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/dragonbornmaletoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n Dragon Born"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/raceRadioGroup"
+        android:layout_width="149dp"
+        android:layout_height="472dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <RadioButton
+            android:id="@+id/clubRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/dwarffemaletoken"
+            android:buttonTint="@color/black"
+            android:textColor="@android:color/black"
+            android:text="\n\n\n\n\n    Dwarf"/>
+
+        <RadioButton
+            android:id="@+id/handaxeRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/humanmaletoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Human"
+
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/lighthammerRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/elfmaletoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Elf"
+            android:textColor="@android:color/black" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="621dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginRight="161dp"
+        android:layout_marginBottom="62dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/seagram"
+        android:text="Choose your Race"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/raceRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

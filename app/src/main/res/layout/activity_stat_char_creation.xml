@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".StatCharCreationActivity">
+
+    <TextView
+        android:id="@+id/textViewTitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/seagram"
+        android:text="Choose your Stats"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/raceRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <TextView
+        android:id="@+id/textViewStrength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/seagram"
+        android:text="Strength"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitles" />
+
+    <TextView
+        android:id="@+id/textViewDexterity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/seagram"
+        android:text="Dexterity"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStrength" />
+
+    <TextView
+        android:id="@+id/textViewCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/seagram"
+        android:text="Constitution"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDexterity" />
+
+    <TextView
+        android:id="@+id/textViewInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/seagram"
+        android:text="Intelligence"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCon" />
+
+    <TextView
+        android:id="@+id/textViewWisdom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/seagram"
+        android:text="Wisdom"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInt" />
+
+    <TextView
+        android:id="@+id/textViewCharisma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/seagram"
+        android:text="Charisma"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWisdom" />
+
+    <Button
+        android:id="@+id/btnStrMinus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:background="@drawable/minus"
+        android:onClick="minusStr"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewStrength"
+        app:layout_constraintStart_toEndOf="@+id/textViewStrength" />
+
+    <Button
+        android:id="@+id/btnDexMinus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:background="@drawable/minus"
+        android:onClick="minusDex"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewDexterity"
+        app:layout_constraintStart_toEndOf="@+id/textViewDexterity" />
+
+    <Button
+        android:id="@+id/btnConMinus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/minus"
+        android:onClick="minusCon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCon"
+        app:layout_constraintStart_toEndOf="@+id/textViewCon" />
+
+    <Button
+        android:id="@+id/btnIntMinus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/minus"
+        android:onClick="minusInt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewInt"
+        app:layout_constraintStart_toEndOf="@+id/textViewInt" />
+
+    <Button
+        android:id="@+id/btnWisMinus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:background="@drawable/minus"
+        android:onClick="minusWis"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewWisdom"
+        app:layout_constraintStart_toEndOf="@+id/textViewWisdom" />
+
+    <Button
+        android:id="@+id/btnChrMinus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/minus"
+        android:onClick="minusChr"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewCharisma"
+        app:layout_constraintStart_toEndOf="@+id/textViewCharisma" />
+
+    <TextView
+        android:id="@+id/ChrStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/titlefont"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnChrMinus"
+        app:layout_constraintStart_toEndOf="@+id/btnChrMinus" />
+
+    <TextView
+        android:id="@+id/WisStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/titlefont"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnWisMinus"
+        app:layout_constraintStart_toEndOf="@+id/btnWisMinus"
+        tools:text="8" />
+
+    <TextView
+        android:id="@+id/IntStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/titlefont"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnIntMinus"
+        app:layout_constraintStart_toEndOf="@+id/btnIntMinus"
+        tools:text="8" />
+
+    <TextView
+        android:id="@+id/ConStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/titlefont"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnConMinus"
+        app:layout_constraintStart_toEndOf="@+id/btnConMinus" />
+
+    <TextView
+        android:id="@+id/DexStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/titlefont"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnDexMinus"
+        app:layout_constraintStart_toEndOf="@+id/btnDexMinus" />
+
+    <TextView
+        android:id="@+id/StrStat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/titlefont"
+        android:text="8"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnStrMinus"
+        app:layout_constraintStart_toEndOf="@+id/btnStrMinus" />
+
+    <Button
+        android:id="@+id/btnStrPlus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/plus"
+        android:onClick="plusStr"
+        app:layout_constraintBaseline_toBaselineOf="@+id/StrStat"
+        app:layout_constraintStart_toEndOf="@+id/StrStat" />
+
+    <Button
+        android:id="@+id/btnDexPlus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/plus"
+        android:onClick="PlusDex"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DexStat"
+        app:layout_constraintStart_toEndOf="@+id/DexStat" />
+
+    <Button
+        android:id="@+id/btnConPlus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/plus"
+        android:onClick="PlusCon"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ConStat"
+        app:layout_constraintStart_toEndOf="@+id/ConStat" />
+
+    <Button
+        android:id="@+id/btnIntPlus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/plus"
+        android:onClick="PlusInt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/IntStat"
+        app:layout_constraintStart_toEndOf="@+id/IntStat" />
+
+    <Button
+        android:id="@+id/btnWisPlus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/plus"
+        android:onClick="PLusWis"
+        app:layout_constraintBaseline_toBaselineOf="@+id/WisStat"
+        app:layout_constraintStart_toEndOf="@+id/WisStat" />
+
+    <Button
+        android:id="@+id/btnChrPlus"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:background="@drawable/plus"
+        android:onClick="PlusChr"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ChrStat"
+        app:layout_constraintStart_toEndOf="@+id/ChrStat" />
+
+    <TextView
+        android:id="@+id/textViewRemaing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/seagram"
+        android:text="Points Remaining: "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCharisma" />
+
+    <TextView
+        android:id="@+id/RemainingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="@font/titlefont"
+        android:text="27"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewRemaing"
+        app:layout_constraintStart_toEndOf="@+id/textViewRemaing" />
+
+    <Button
+        android:id="@+id/nextButtonStats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRemaing" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

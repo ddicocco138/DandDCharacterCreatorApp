@@ -1,0 +1,158 @@
+{
+  "project_info": {
+    "project_number": "716828433390",
+    "project_id": "dicoccohomeworks",
+    "storage_bucket": "dicoccohomeworks.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716828433390:android:7fbe75df9bf3e29ed9ccff",
+        "android_client_info": {
+          "package_name": "com.example.dicoccoandroidfinaldnd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716828433390-0252vrlvm71rq1obuhekcrbm291dqho9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dicoccoandroidfinaldnd",
+            "certificate_hash": "e5ee425493dbaec8a27363a94414cc2972e7177f"
+          }
+        },
+        {
+          "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRw7fe1HPkz0rhRkBBka19ebb2PaRfIAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716828433390:android:4509e01ce13c6d58d9ccff",
+        "android_client_info": {
+          "package_name": "com.example.dicoccohomework2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716828433390-jnr38c01e5g6mpk7f2np6momjv4vqgt4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dicoccohomework2",
+            "certificate_hash": "e5ee425493dbaec8a27363a94414cc2972e7177f"
+          }
+        },
+        {
+          "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRw7fe1HPkz0rhRkBBka19ebb2PaRfIAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716828433390:android:31d2d960ebc7edd1d9ccff",
+        "android_client_info": {
+          "package_name": "com.example.dicoccohw3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716828433390-t8bicgm6hk62h0q2g31i7o6nbirrmha5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dicoccohw3",
+            "certificate_hash": "e5ee425493dbaec8a27363a94414cc2972e7177f"
+          }
+        },
+        {
+          "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRw7fe1HPkz0rhRkBBka19ebb2PaRfIAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716828433390:android:b0531a16af765674d9ccff",
+        "android_client_info": {
+          "package_name": "com.example.labfirestore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "716828433390-rjk8spjp6ua7j0hrh5326tdk418kf99e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.labfirestore",
+            "certificate_hash": "e5ee425493dbaec8a27363a94414cc2972e7177f"
+          }
+        },
+        {
+          "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRw7fe1HPkz0rhRkBBka19ebb2PaRfIAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "716828433390-nglgo2hn8olr375aqqdgfl79gt27nndo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

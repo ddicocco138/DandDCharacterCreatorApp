@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".ClassPageCharCreation">
+
+    <RadioGroup
+        android:id="@+id/raceRadioGroup2"
+        android:layout_width="149dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443">
+
+        <RadioButton
+            android:id="@+id/bardRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/bardtoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Bard"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/druidRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/druidtoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Druid"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/paladinRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/paladintoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Paladin"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rougeRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/rougetoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Rouge"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/warlockRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/warlocktoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Warlock"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/raceRadioGroup"
+        android:layout_width="149dp"
+        android:layout_height="617dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859">
+
+        <RadioButton
+            android:id="@+id/barbarianRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/barbariantoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Barbarian"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/clericRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/clerictoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Cleric"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/fighterRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/fightertoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Fighter"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/rangerRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/rangertoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Ranger"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/sorcererRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/sorcerertoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Sorcerer"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/wizardRadio"
+            android:layout_width="145dp"
+            android:layout_height="102dp"
+            android:background="@drawable/wizardtoken"
+            android:buttonTint="@color/black"
+            android:text="\n\n\n\n\n    Wizard"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <TextView
+        android:id="@+id/textViewTitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/seagram"
+        android:text="Chooze your Class"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/raceRadioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

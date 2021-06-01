@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/placeHolder"
+        android:layout_width="354dp"
+        android:layout_height="523dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:visibility="invisible" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/theTavernRules"
+        android:layout_width="354dp"
+        android:layout_height="523dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/theCombatRules"
+        android:layout_width="354dp"
+        android:layout_height="523dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/theRaceRules"
+        android:layout_width="354dp"
+        android:layout_height="523dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/basicRules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/placeHolder"
+        android:layout_alignRight="@id/placeHolder"
+        android:layout_marginTop="35dp"
+        android:onClick="hide"
+        android:text="Tavern Rules" />
+
+    <Button
+        android:id="@+id/combatRules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/placeHolder"
+        android:layout_alignRight="@id/placeHolder"
+        android:layout_below="@+id/basicRules"
+        android:onClick="hide2"
+        android:text="Combat Rules" />
+
+    <Button
+        android:id="@+id/raceTraits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/placeHolder"
+        android:layout_alignRight="@id/placeHolder"
+        android:layout_below="@+id/combatRules"
+        android:onClick="hide3"
+        android:text="Racial Traits" />
+</RelativeLayout>
